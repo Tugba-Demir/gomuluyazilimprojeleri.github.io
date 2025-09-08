@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="stm32, arduino, raspberry pi">
+        <meta name="description" content="stm32f4, arduino ve raspberry pi çalışmaları yer almaktadır.">
+        <title>STM32F407VG Geliştirme Ortamları</title>
+
+        <link rel="stylesheet" href="D2.css">
+    </head>
+
+    <body style="background-color: #bab7b7;">
+
+        <!--Part1:-->
+        <!-- Üst Menü Çubuğu -->
+        <div class="ust_menu">
+            <!-- Web Sitesi Başlığı -->
+            <p class="web_icon"><a href="#" style="text-decoration: none; color: white;">TD Projects</a></p>
+        </div>
+
+
+        <!--Part2: Sayfa içeriği-->
+
+        <!--Part2: Sayfa içeriği-->
+
+        <div class="sayfa_icerigi" style="border-style: none; width: 1000px; height: 300px; position: absolute; margin-left: 300px; margin-top: 120px;">
+            <div id="metin" style="border-style: none; padding-left: 10px;">
+                <h2 style="border-style: none; text-align: center; color: #c00000;">STM32F407VG GELİŞTİRME ORTAMLARI</h2>
+            </div>
+
+            
+        </div>
+        
+
+        <!--Part3: Alt Menü-->
+        <div class="alt_menu">
+            
+        </div>
+
+
+        <script>
+            fetch("D2.txt")
+            .then(response => response.text())
+            .then(data => {
+                const lines = data.split("\n"); // Satırlara ayır
+                const container = document.getElementById("metin");
+
+                lines.forEach((line, index) => {
+                const p = document.createElement("p");
+                p.textContent = line;
+                
+                if(index==0){
+                    p.style.marginTop="30px";
+                }
+
+
+                
+
+                p.style.color = "black";
+                p.style.fontSize="20px"
+
+                container.appendChild(p);
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

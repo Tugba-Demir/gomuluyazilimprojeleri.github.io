@@ -1,0 +1,202 @@
+/* Temel sıfırlama */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/*Part1:*/
+/* Üst menü çubuğu */
+.ust_menu {
+    width: 100%;
+    height: 70px;
+    background-color: #2D2D2D;    
+    z-index: -1;
+}
+
+/* Web icon */
+.web_icon {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Üst menü çerçevesi */
+.ust_menu_cerceve {
+    list-style: none;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 28px;
+}
+
+.ust_menu_cerceve li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.ust_menu_cerceve li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.ust_menu_cerceve li:hover {
+    background-color: rgb(210, 207, 207);
+}
+
+/* Çalışmalarım menüsü */
+.calismalarim {
+    position: relative;
+}
+
+/* Alt seçenekler başlangıçta gizli */
+#calismalarim_alt_secenekler {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2D2D2D;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+    z-index: 99;
+    min-width: 150px;
+}
+
+/* Hover olunca görünür */
+.calismalarim:hover #calismalarim_alt_secenekler {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Alt menü liste öğeleri */
+#calismalarim_alt_secenekler ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#calismalarim_alt_secenekler li {
+    padding: 10px 0;
+}
+
+#calismalarim_alt_secenekler li a {
+    color: white;
+    text-decoration: none;
+}
+
+#calismalarim_alt_secenekler li:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+
+/*Part2:*/
+.yan_menu{
+    border-style: none;
+    list-style-type: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-left: 0px;
+    height: 530px;
+    background-color: #b2b0b0;
+    border-radius: 15px;
+}
+
+.yan_menu li{
+    border-style: none; 
+    width: 200px;
+    height: 30px; 
+    text-align: center; 
+    padding-top: 15px;
+}
+
+/*Part3:*/
+.stm32_ders{
+    border-style: none;
+    position: absolute;
+    height: 200px;
+    font-weight: 500px;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+#secenek1:hover{
+    background-color: #dfdddd;
+}
+
+#secenek2:hover{
+    background-color: #dfdddd;
+}
+
+.proje_icon{
+    border-style: solid;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    display: inline-block; 
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.proje_icon a{
+    text-decoration: none; 
+    color: black;
+}
+
+.proje_icon img{
+    width: 100px; 
+    height: 100px; 
+    position: absolute; 
+    margin-left: 27px; 
+    margin-top: 10px;
+}
+
+.proje_icon p{
+    position: absolute; 
+    text-align: center; 
+}
+
+/*Part4:*/
+.alt_menu{
+    width: 100%;
+    height: 60px;
+    background-color: #2D2D2D;    
+    z-index: -1;
+    position: absolute;
+    margin-top: 1000px;
+}
+
+.alt_menu_ikonlari{
+    border-style: none;
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 1230px;
+}
+
+.a_ikonlari{
+    border-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 3px;
+}
+
+.a_ikonlari img{
+    width: 30px; 
+    height: 30px; 
+    position: absolute; 
+    margin-top: 5px; 
+    margin-left: 5px;
+}

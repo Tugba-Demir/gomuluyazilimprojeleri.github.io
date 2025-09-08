@@ -1,0 +1,5 @@
+Bu derste STM32F407 geliştirme kartını programlayabilmek için gerekli olan programlardan bahsedildi.
+1- Atollic True Studio: STM32F407 kartına yüklenecek programların, kodların yazılacağı IDE.
+2- Cube-Mx: HAL Kütüphanelerini kullanırken Cube Mx ile derlenen işlemleri Atollic TrueStudio' ya gönderip HAL Kütüphaneleri ile çalışılacak. Cube Mx aynı zamanda referans olarak da destek sağlar.
+3- STM Studio: Debug işlemleri yaparken işlemlerin takip edilebileceği bir studio ortamı.
+4- Termite Uygulaması: Termite uygulamasını USB TTL aracılığıyla seri haberleşmede kullanacağız.
